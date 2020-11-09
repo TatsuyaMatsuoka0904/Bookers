@@ -1,0 +1,6 @@
+layouts/_error_messages.html.haml
+-if model.errors.any? 
+  .alert
+    %ul
+      -model.errors.full_messages.each do |message| 
+        %li= message
